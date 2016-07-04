@@ -1,5 +1,8 @@
+var DataStructures = require('algorithms').DataStructures;
+var Stack = DataStructures.Stack;
+
 var pair = function(input) {
-  var stack = [];
+  var stack = new Stack;
 
   for (var i = 0; i < input.length; i ++) {
     var ying = {'[':']','{':'}','(':')'};
@@ -17,4 +20,4 @@ var pair = function(input) {
 
 console.log(pair('{}((((()))))'));
 console.log(pair('[()]{}{[()()]()}'));
-console.log(pair('{[[](]}][[))))))]]'));  
+console.log(pair('{[[](]}][[))))))]]'));

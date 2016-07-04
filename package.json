@@ -1,0 +1,23 @@
+{
+  "name": "ds-parenthesis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "parentheses.js",
+  "dependencies": {
+    "algorithms": "^0.10.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/riccochapa/ds-parenthesis.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/riccochapa/ds-parenthesis/issues"
+  },
+  "homepage": "https://github.com/riccochapa/ds-parenthesis#readme"
+}
