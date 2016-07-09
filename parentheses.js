@@ -1,21 +1,20 @@
-var DataStructures = require('algorithms').DataStructures;
-var Stack = DataStructures.Stack;
+const DataStructures = require('algorithms').DataStructures;
+const Stack = DataStructures.Stack;
 
-var pair = function(input) {
-  var stack = new Stack;
+const pair = function pair(input) {
+  const stack = new Stack;
 
-  for (var i = 0; i < input.length; i ++) {
-    var ying = {'[':']','{':'}','(':')'};
-    var yang = input[i];
+  for (let i = 0; i < input.length; i ++) {
+    const ying = { '[': ']', '{': '}', '(': ')' };
+    const yang = input[i];
 
-    if (ying[yang]){
+    if (ying[yang]) {
       stack.push(yang);
-    }
-    else if (ying[stack.pop()] !== yang){
+    } else if (ying[stack.pop()] !== yang) {
       return false;
     }
   }
-  return stack.length != true;
+  return stack.length !== true;
 };
 
 console.log(pair('{}((((()))))'));
